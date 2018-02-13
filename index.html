@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Practice Angularjs</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js" charset="utf-8"></script>
+  </head>
+  <body >
+    <!-- Directive -->
+    <!-- ng-app -->
+    <!-- ng-init -->
+    <!-- <div ng-app="" ng-init="name1='aa';name2='bb';color='red';txt='white'">
+
+      <! Expression-->
+
+      <!--
+      {{5*10}}
+      <h1>{{100*50}}</h1> -->
+
+      <!-- ngmodel -->
+      <!-- Name : <input type="text" name="" value="" placeholder="YOUR NAME" ng-model="name1" >
+
+      Name : <input type="text" name="" value="" placeholder="YOUR NAME" ng-model="name2">
+
+      <br>
+      <h1 style="background-color:{{color}};color:{{txt}}">Hello : {{name1 +" "+ name2}}</h1>
+
+
+    </div> -->
+    <!-- object -->
+    <!-- <div ng-app="" ng-init="people={name1:'aa',name2:'bb'}">
+      Name : <input type="text" name="" value="" placeholder="YOUR NAME" ng-model="name1" >
+
+      Name : <input type="text" name="" value="" placeholder="YOUR NAME" ng-model="name2">
+
+      <br>
+      <h1 >Hello : {{people.name1 +" "+ people.name2}}</h1>
+
+    </div> -->
+    <!-- array -->
+    <!-- <div ng-app="" ng-init="people=['สมชาย','สมหญิง']">
+      Name : <input type="text" name="" value="" placeholder="YOUR NAME" ng-model="name1" >
+
+      Name : <input type="text" name="" value="" placeholder="YOUR NAME" ng-model="name2">
+      <br>
+      <h1 >Hello : {{people[0] +" "+ people[1]}}</h1>
+
+
+    </div> -->
+    <!-- module -->
+    <!-- ng-controller -->
+    <!-- <div ng-app="myApp" ng-controller="myCtrl">
+        <h1>{{name1+name2}}</h1>
+    </div> -->
+
+    <!-- Custom Directive -->
+    <!-- <div ng-app="myApp" colortxt></div> -->
+
+
+    <!-- Data binding -->
+    <!-- <div ng-app="" ng-init="price=50;count=1" >
+      ราคา : <input type="text" name="" value="" ng-model="price">
+      จำนวน : <input type="number" name="" value="" ng-model="count">
+      <h1>{{price*count}}</h1>
+    </div> -->
+
+    <!-- ng-repeat -->
+    <!-- <div ng-app="" ng-init="eng=['AAA','BBB','CCC']" >
+      <ul>
+        <li ng-repeat="x in eng">
+          {{x}}
+        </li>
+      </ul>
+    </div> -->
+
+    <!-- Event Click -->
+    <!-- <div ng-app="myApp" ng-controller="ctrl1">
+      <button type="button" name="button" ng-click="myFunction()">Click</button>
+      {{count}}
+    </div>-->
+
+    <!-- Form Radio -->
+    <!-- <div ng-app="myApp" >
+      <form >
+        <input type="radio" name="" value="dog" ng-model="myAnimal">Dog
+        <input type="radio" name="" value="cat" ng-model="myAnimal">Cat
+        <input type="radio" name="" value="ant" ng-model="myAnimal">Ant
+
+      </form>
+      <div ng-switch="myAnimal">
+        <div ng-switch-when="dog">
+          <h1>D-Dog</h1>
+        </div>
+        <div ng-switch-when="cat">
+          <h1>C-Cat</h1>
+        </div>
+        <div ng-switch-when="ant">
+          <h1>A-Ant</h1>
+        </div>
+      </div>
+
+    </div> -->
+
+    <!-- Form select -->
+    <div ng-app="myApp" >
+      <form >
+        <select ng-model="myAnimal">
+          <option  value="dog">Dog</option>
+          <option  value="cat">Cat</option>
+          <option  value="ant">Ant</option>
+        </select>
+
+
+      </form>
+      <div ng-switch="myAnimal">
+        <div ng-switch-when="dog">
+          <h1>D-Dog</h1>
+        </div>
+        <div ng-switch-when="cat">
+          <h1>C-Cat</h1>
+        </div>
+        <div ng-switch-when="ant">
+          <h1>A-Ant</h1>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+    <script src="app.js"></script>
+
+<!--
+    {{5*10}}
+    <h1>{{100*50}}</h1> -->
+  </body>
+</html>
